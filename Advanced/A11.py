@@ -9,6 +9,10 @@ Regardless whether found or not found your program should output the path traver
 determining the answer, followed by yes if found or no, respectively.
 '''
 
+# Note: The task doesn't specify how the tree is supposed to look.
+# I assume node labels are words, while frequencies are additional values for them.
+# The tree is sorted in alphabetical order.
+
 class BinTreeNode(object):
     def __init__(self, word, frequency):
         self.word = word
