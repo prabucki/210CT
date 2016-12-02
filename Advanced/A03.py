@@ -9,6 +9,42 @@ second string.
 What's the run time?
 '''
 
+'''
+------PSEUDO CODE------
+
+EVERYTHING(A,B)
+	string FOUND
+	FOR i <- 1 to LENGTH(A)
+		FOUND[i] <- A[i]
+	FOR j <- 1 to LENGTH(B)
+		FOUND[i+j] <- B[j]
+	RETURN FOUND
+
+Run Time:  O(n)
+
+EVERYTHING_ONCE(A,B)
+	string FOUND
+	FOR a <- 1 to LENGTH(A)
+	    IF a NOT IN FOUND
+	        FOUND.append(A[i])
+		FOR b <- 1 to LENGTH(B)
+			IF b NOT IN FOUND
+				FOUND.append(B[i])
+	RETURN FOUND
+
+Run Time: O(n^2)
+
+FIRST_STRING_ONLY (A,B)
+	FOR a <- 1 to LENGTH(A)
+		FOR b <- 1 to LENGTH(B)
+			IF A[a] = B[b]
+				A.remove(A[a])
+	RETURN A
+
+Run Time:  O(n^2)
+
+'''
+
 from random import randint
 
 def similarities(n1, n2):
@@ -36,18 +72,19 @@ def FirstStringOnly(n1, n2):
                 n1.remove(a)
     return n1
 
-
-
+# Variables
 n = 10
 m = 5
 numbers = [[], []]
 z = [n, m]
 
+# Generating 2 lists of random numbers from 1 to 20
 for i in range(n):
     numbers[0].append(randint(1, 20))
 for i in range(m):
     numbers[1].append(randint(1, 20))
 
+# Results
 print(numbers[0])
 print(numbers[1])
 print('Similarities: ',similarities(numbers[0], numbers[1]))
