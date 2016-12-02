@@ -23,7 +23,6 @@ class Tree(object):
     def nodeInsert(self, label, child, value):
         # find parent node
         tree = TreeNode(label)
-        print(tree.label)
         tree.addChild(child, value)
 
     def findNode(self, label):
@@ -102,10 +101,9 @@ class Graph(object):
         print("Spanning tree created successfully")
         # Label, Child, Value
         t = Tree(T[0][1], T[0][2], T[0][0])
-        print(t)
         for i in range(1, len(T)):
                 t.nodeInsert(T[i][1], T[i][2], T[i][0])
-        return T # [[63, 'G', 'H'], [23, 'A', 'B'], [10, 'G', 'F'], [5, 'A', 'S'], [3, 'C', 'E'], [3, 'C', 'D'], [2, 'S', 'C'], [1, 'S', 'G'], [0, 'H', 'E']]
+        return T
 
 
     def isConnected(self):
