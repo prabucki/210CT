@@ -4,7 +4,10 @@ By Tomasz Prabucki
 
 #Info
 
-This repository is a collection of all my 210CT coursework submission pieces.
+Coventry University
+210 CT - Programming, Algorithms and Data Structures
+
+This repository is a collection of all my 210CT coursework submission pieces, both Basic and Advanced level.
 
 #Weekly Guide
 
