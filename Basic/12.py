@@ -1,4 +1,9 @@
-# include <iostream>
+'''
+TASK OBJECTIVE:
+
+Implement TREE_SORT algorithm in a language of your choice, but make sure that the
+INORDER function is implemented iteratively.
+'''
 
 class BinTreeNode(object):
     def __init__(self, value):

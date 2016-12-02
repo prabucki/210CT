@@ -1,3 +1,11 @@
+'''
+TASK OBJECTIVE:
+
+Consider the structure of an undirected weighed graph. Implement an algorithm to find its
+maximum cost spanning tree. The output should be the pre-order and post-order traversal
+of the tree. Describe the running time of this algorithm.
+'''
+
 class TreeNode(object):
 
     def __init__(self, label):

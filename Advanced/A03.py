@@ -1,3 +1,14 @@
+'''
+TASK OBJECTIVE:
+
+Given two strings of n and m integer elements, write the pseudocode to compute:
+a) The string that contains all the elements belonging to both strings.
+b) The string of all the elements of the two given strings, written once.
+c) The string of the elements from the first string, without the elements that are also in the
+second string.
+What's the run time?
+'''
+
 from random import randint
 
 def similarities(n1, n2):

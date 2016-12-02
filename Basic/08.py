@@ -1,3 +1,10 @@
+'''
+TASK OBJECTIVE:
+
+Write a recursive function (pseudocode and code) that removes all vowels from a given
+string s. Input: "beautiful" Output: "btfl".
+'''
+
 vowels="aeiou"
 a = "beautiful"
 

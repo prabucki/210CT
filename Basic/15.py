@@ -1,4 +1,9 @@
-# What if 2 nodes have the same value? Should I operate on them by memory address instead of value? rergesrtertewrtwertwertwertert dfsf
+'''
+TASK OBJECTIVE:
+
+Implement Dijkstra’s algorithm for a weighted graph data structure (you have to update
+your previous data structure so that it can deal with weights).
+'''
 
 class Vertex(object):
     def __init__(self, label):

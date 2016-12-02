@@ -1,3 +1,13 @@
+'''
+TASK OBJECTIVE:
+
+Consider having n cubes, each being characterized by their edge length and their colour.
+Use the cubes (not necessarily all of them) in order to build a tower of maximum height,
+under the following conditions:
+ a) any two neighbouring cubes must be of different colours.
+ b) the edge length of a cube is lower than the edge length of the cube placed below it.
+'''
+
 from random import randint
 
 colours = {1: 'blue', 2: 'green', 3: 'red', 4: 'cyan', 5: 'magenta', 6: 'yellow', 7: 'black', 8: 'white'}

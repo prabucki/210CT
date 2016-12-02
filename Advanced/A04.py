@@ -1,3 +1,10 @@
+'''
+TASK OBJECTIVE:
+
+Write the pseudocode for a recursive program to generate the Cartesian product (product
+set, direct product, cross product) of n sets.
+'''
+
 from random import randint
 
 def Cartesian(sets):

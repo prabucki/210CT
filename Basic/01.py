@@ -1,3 +1,11 @@
+'''
+TASK OBJECTIVE:
+
+Write a function that randomly shuffles an array of integers and explain the rationale
+behind its implementation.
+'''
+
+
 from random import randint
 
 print('test')

@@ -1,5 +1,10 @@
-#Does this task can be done only with pseudocode or do we have to "COMPUTE" it using normal code as well?
-#Do I have to allow for B/C matrixes input?
+'''
+TASK OBJECTIVE:
+
+Write the pseudocode corresponding to functions for addition, subtraction and
+multiplication of two matrices, and then compute A=B*C –2*(B+C), where B and C are two
+quadratic matrices of order n. What is the run-time?
+'''
 
 n = 5
 B = [[0]*n for i in range(n)]

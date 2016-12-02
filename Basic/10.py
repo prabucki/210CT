@@ -1,4 +1,11 @@
-#remove scores with len(L2/L3) later on
+'''
+TASK OBJECTIVE:
+
+Given a sequence of n integer numbers, extract the sub-sequence of maximum length
+which is in ascending order.
+'''
+
+# Note: remove scores with len(L2/L3) later on
 
 n = 11
 L = [5, 123, 34, 12, 68, 1, 95, 100, 2, 2, 3, 4, 5, 3]

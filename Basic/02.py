@@ -1,3 +1,9 @@
+'''
+TASK OBJECTIVE:
+
+Count the number of trailing 0s in a factorial number.
+'''
+
 a = 4617
 b = 5
 power=1

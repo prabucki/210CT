@@ -1,4 +1,13 @@
-#I deleted all links to node we want to delete. Do I have to delete the node itself somehow?
+'''
+TASK OBJECTIVE:
+
+Using the model of a circular single-linked list, implement the following scenario:
+N children stand in a circle; one of the children starts counting the others clockwise. Every
+Nth child leaves the game. The winner is the one who remains.
+Notes: Read the number of children, the childrens' names and the one starting to count
+from the standard input. Input: 4; Diana, Michael, David, Mary; Start: Diana; Winner:
+Michael.
+'''
 
 class Node(object):
     def __init__(self, value, next):

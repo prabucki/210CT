@@ -1,3 +1,10 @@
+'''
+TASK OBJECTIVE:
+
+Adapt the quick sort algorithm to find the mth smallest element out of a sequence of n
+integers.
+'''
+
 from random import randint
 
 

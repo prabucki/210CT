@@ -1,4 +1,9 @@
-#I deleted all links to node we want to delete. Do I have to delete the node itself somehow?
+'''
+TASK OBJECTIVE:
+
+Based on the Python code or the C++ code provided in class as a starting point, implement
+the double linked list node delete function.
+'''
 
 class Node(object):
     def __init__(self, value):

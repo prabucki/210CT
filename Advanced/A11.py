@@ -1,4 +1,13 @@
-# include <iostream>
+'''
+TASK OBJECTIVE:
+
+Build a Binary Search Tree (BST) to hold English language words in its nodes. Use a
+paragraph of any text in order to extract words and to determine their frequencies.
+Input: You should read the paragraph from a suitable file format, such as .txt. The following
+tree operations should be implemented: a) Printing the tree in pre-order. b) Finding a word.
+Regardless whether found or not found your program should output the path traversed in
+determining the answer, followed by yes if found or no, respectively.
+'''
 
 class BinTreeNode(object):
     def __init__(self, word, frequency):

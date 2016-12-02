@@ -1,4 +1,10 @@
+'''
+TASK OBJECTIVE:
 
+Write a program to predict the number of creatures in a fictional alien invasion. An alien
+lays X eggs each day (there are no genders in this species) and the eggs hatch after Y days. If
+X is 3 and Y is 5, how many aliens will there be 30 days after a single alien invades?
+'''
 
 def AlienInvasion(x, y, days):
     day = 1
@@ -21,4 +27,4 @@ x = 3 # Eggs alien lays each day
 y = 5 # Days after egg hatches
 days = 30
 
-print(AlienInvasion(x, y, days))
+print('Final result: ',AlienInvasion(x, y, days))

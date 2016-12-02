@@ -1,5 +1,11 @@
-# What if 2 nodes have the same value? Should I operate on them by memory address instead of value?
-# Add case for unconnected node
+'''
+TASK OBJECTIVE:
+
+Implement the structure for an unweighted, undirected graph G, where nodes consist of
+positive integers. Also, implement a function isPath(v, w), where v and w are vertices in the
+graph, to check if there is a path between the two nodes. The path found will be printed to
+a text file as a sequence of integer numbers (the node values).
+'''
 
 class Vertex(object):
     def __init__(self, label):

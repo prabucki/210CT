@@ -1,3 +1,10 @@
+'''
+TASK OBJECTIVE:
+
+. Write a function to calculate the kth power of a square matrix, using pointers to access to
+the elements of the matrix. The resulted matrix will be displayed in natural form.
+'''
+
 
 n = 5
 k = 3
