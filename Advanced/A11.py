@@ -16,16 +16,19 @@ class BinTreeNode(object):
         self.left = None
         self.right = None
 
-
 def tree_insert(tree, word, frequency):
+
+    # Check if this is the first element in the tree
     if tree == None:
         tree = BinTreeNode(word, frequency)
     else:
+        # word is earlier in alphabet than parent node
         if (word < tree.word):
             if (tree.left == None):
                 tree.left = BinTreeNode(word, frequency)
             else:
                 tree_insert(tree.left, word, frequency)
+        # word is later in alphabet than parent node
         else:
             if (tree.right == None):
                 tree.right = BinTreeNode(word, frequency)
@@ -34,6 +37,8 @@ def tree_insert(tree, word, frequency):
     return tree
 
 def preorder(tree):
+    '''Output item, then follow left tree, then right tree'''
+
     print(tree.word, tree.frequency)
     if (tree.left != None):
         preorder(tree.left)
@@ -41,6 +46,8 @@ def preorder(tree):
         preorder(tree.right)
 
 def findWord(tree, word):
+    ''' Navigate given tree to find particular word'''
+
     print('Looking for word:', word)
     r = tree
     while r != None:
@@ -58,22 +65,35 @@ def findWord(tree, word):
     return 'NO. WORD WAS NOT FOUND :('
 
 if __name__ == '__main__':
+
     f = open('paragraph.txt', 'r')
     text = f.read()
+
+    # Remove unnecessary characters from paragraph
     text = text.replace('.','')
     text = text.replace(',', '')
-    t = None
-    frequencies = {}
+
+    t = None # Will be replaced with tree
+    frequencies = {} # Key: word, Value: frequency
+
+    # Catalogue words from paragraph into frequencies dictionary
     for i in text.split():
         if i not in frequencies:
             frequencies[i] = 1
         else:
             frequencies[i] += 1
+
+    # Generate tree from words/frequencies dictionary
     for key, value in frequencies.items():
         if t == None:
             t = tree_insert(None, key, value)
         else:
             tree_insert(t, key, value)
+
+    # Results
+    print()
+    print('-- PREORDERED TREE --')
     preorder(t)
     print()
+    print('-- SEARCH FOR WORD -- ')
     print(findWord(t, 'today'))
